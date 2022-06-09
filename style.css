@@ -1,0 +1,98 @@
+body {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background: linear-gradient(170deg, #83ce99, #21b162);
+    position: relative;
+    overflow-y: hidden;
+    min-height: 100vh;
+}
+.fireworksDiv{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -100;
+}
+
+.flex-board {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back {
+    width: 60vw;
+    background-color: #00000010;
+    border-radius: 20px;
+}
+#message{
+    text-align: center;
+}
+
+.head {
+    color: #ffffff;
+    margin: 2vh;
+    height: 10vh;
+    position: relative;
+    font-size: 24px;
+}
+
+.head h3 {
+    text-transform: uppercase;
+}
+
+.head p {
+    position: absolute;
+    right: 1vh;
+    top: 2vw;
+}
+
+#autor {
+    color: #ffffff;
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.playGround {
+    padding: 3vh 0 3vh 0;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-rows: repeat(6, 5vw);
+    grid-template-columns: repeat(7, 5vw);
+    grid-gap: 1vw;
+    background-color: #00000010;
+    border-radius: 10px;
+    transform: rotate(180deg);/*dzięki temu zaczyna od dołu  */
+}
+.circle {
+    background-color: #ffffff46;
+    border-radius: 100%;
+    transition: all .2s ease;
+}
+
+.circle:hover {
+    background: linear-gradient(180deg, #ff000059, #f7e60154);
+    position: relative;
+}
+
+.button {
+    text-decoration: none;
+    text-align: center;
+    color: #52A070;
+    background-color: #ffffff;
+    border: 2px solid #52A070;
+    width: 12vw;
+    line-height: 3vw;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 10px;
+    margin: 0.5vw;
+}
+
+.button:hover {
+    background-color: #52A070;
+    color: #ffffff;
+    border-bottom: 2px solid #28643f;
+    border-right: 2px solid #28643f;
+}
